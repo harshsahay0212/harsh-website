@@ -8,7 +8,7 @@
     <script src="./index.js"></script>
     <title>Bang And Olufsen 2.0</title>
 </head>
-<body>
+<body onload="loadComplete()">
     <h1>This is Harsh Website </h1>
     <div id="section1">
         <p id="section1-para1"> </p>
@@ -16,7 +16,11 @@
             <h1>Know about Darsh</h1></button>
     </div>
     <div id="section2">
-        <div id="carousel-container">
+        <div id="prev-button-container">
+            <button onclick="slideOperation('prev')"> Previous</button>
+        </div>
+        
+        <div id="carousel-image-container">
             <div class="imgCls">
                 <img src="./images/1_parasnath.jpeg" alt="Italian Trulli">
             </div>
@@ -32,7 +36,17 @@
             <div class="imgCls">
                 <img src="./images/4_home.jpeg" alt="Italian Trulli">
             </div>
+
+            <div class="imgCls">
+                <img src="./images/5_Alpine_Park.png" alt="Italian Trulli">
+            </div>
+       
         </div>
+
+        <div id="next-button-container">
+            <button onclick="slideOperation('next')"> Next</button>
+        </div>
+
     </div>
 </body>
 </html>
