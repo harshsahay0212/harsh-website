@@ -5,6 +5,9 @@ body {
 
 }
 
+.invisible {
+    display : none;
+}
 #section2 {
     margin-top: 50px;
     display: flex;

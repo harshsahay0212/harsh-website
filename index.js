@@ -1,4 +1,12 @@
-
+function  myabillity() {
+    alert('Do You Really Want To Do This ?')
+    const para2 = document.getElementById('section1-para2');
+    if(para2.classList.contains('invisible')){
+        para2.classList.remove('invisible');
+    }else {
+        para2.classList.add('invisible');
+    }
+}
 function myrelationship() {
      alert('Do You Really Want To Do This ?');
     const para1 = document.getElementById('section1-para1');
@@ -14,12 +22,6 @@ function loadComplete(){
     const currentSlide = slideList[index];
     currentSlide.classList.add('current-slide');
     }
-
-function prevButtonOperation() {
-    const imageContainer = document.getElementById('carousel-image-container');
-    const slideList = imageContainer.querySelectorAll('.imgCls');
-    
-}
 
 function slideOperation(typeOfOperation) {
     console.log('typeOfOperation => ', typeOfOperation);
