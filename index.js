@@ -8,7 +8,7 @@ function  myabillity() {
     }
 }
 function myrelationship() {
-     alert('Do You Really Want To Do This ?');
+    // alert('127.0.0.1:5500 says ');
     const para1 = document.getElementById('section1-para1');
     para1.innerHTML = ' Darsh is my younger brother , he is very naughty !!!';
 }

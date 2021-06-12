@@ -13,6 +13,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    /* transition-property: width, height;
+    transition-duration: 5s; */
+    transition: all 1s ease-in-out;
+}
+#section2 :hover{
+    transform :rotateX(180deg);
 }
 
 #carousel-image-container {
@@ -31,3 +37,6 @@ body {
 .current-slide {
     display: block;
 }
+
+
+
