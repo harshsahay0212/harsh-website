@@ -1,3 +1,18 @@
 body {
     background-color: rgb(0, 183, 255);
 }
+
+#section2 {
+    margin-top: 50px;
+}
+
+#carousel-container {
+    display: flex;
+    align-items: center;
+}
+
+.imgCls img{ 
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
