@@ -1,16 +1,13 @@
-function  myabillity() {
-    alert('Do You Really Want To Do This ?')
-    const para2 = document.getElementById('section1-para2');
-    if(para2.classList.contains('invisible')){
-        para2.classList.remove('invisible');
-    }else {
-        para2.classList.add('invisible');
-    }
-}
+
 function myrelationship() {
-    // alert('127.0.0.1:5500 says ');
+     //alert('127.0.0.1:5500 says ');
     const para1 = document.getElementById('section1-para1');
     para1.innerHTML = ' Darsh is my younger brother , he is very naughty !!!';
+    if(para1.classList.contains('invisible')){
+    para1.classList.remove('invisible') 
+    }else {
+     para1.classList.add('invisible')
+    }    
 }
 
 function loadComplete(){
@@ -28,6 +25,7 @@ function slideOperation(typeOfOperation) {
     const imageContainer = document.getElementById('carousel-image-container');
     const slideList = imageContainer.querySelectorAll('.imgCls');
     const currentSlide = document.querySelectorAll('.current-slide')[0];
+    currentSlide.classList.remove('rotateMe');
     let currentSLideIndex, nextSlide;
     let slideFoundFlag= false;
    
@@ -60,4 +58,11 @@ function slideOperation(typeOfOperation) {
         }
         
     }
+    var newSlide = document.querySelectorAll('.current-slide')[0];
+    console.log('newSlide : ', newSlide);
+    newSlide.addEventListener("click", function() {
+        console.log('clicked');
+        newSlide.classList.add('rotateMe');
+    });
 }
+
